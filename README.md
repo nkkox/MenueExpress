@@ -1,6 +1,6 @@
 Hier sammeln wir jeglichen Code / Dateien. 
 
-Rechts oben den grünen Code-Button, dann unten auf "Download ZIP"
+Rechts oben den farbigen Code-Button, dann unten auf "Download ZIP"
 Extrahieren, und schon hat man alle Dateien. So kann man super dran Arbeiten.
 
 Sonst kann man hier auf der Website auch jeglichen Code bearbeiten.
