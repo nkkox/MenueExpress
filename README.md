@@ -10,7 +10,7 @@ also .com zu .dev, hat man Visual Studo direkt im Browser, welches Live hier spe
 
 Maximale Erfolge!
 
-"
+Ausschnitt aus Styles.css"
 /*VORNOTIZ: Bereiche für jede HTML-Seite sind erstellt. Packt jeglichen code darein.*/
 /* WICHTIG: Arbeitet mit Klassen. Alles, was css extra benötigt, kriegt eine Klasse.*/
 /* Sonst beeinflusst und nervt sich alles gegenseitig*/
