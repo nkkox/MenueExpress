@@ -9,3 +9,9 @@ Sonst kann man hier auf der Website auch jeglichen Code bearbeiten / einfügen /
 also .com zu .dev, hat man Visual Studo direkt im Browser, welches Live hier speichern sollte.
 
 Maximale Erfolge!
+
+"
+/*VORNOTIZ: Bereiche für jede HTML-Seite sind erstellt. Packt jeglichen code darein.*/
+/* WICHTIG: Arbeitet mit Klassen. Alles, was css extra benötigt, kriegt eine Klasse.*/
+/* Sonst beeinflusst und nervt sich alles gegenseitig*/
+"
