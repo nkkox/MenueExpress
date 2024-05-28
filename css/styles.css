@@ -1,3 +1,7 @@
+/*VORNOTIZ: Bereiche für jede HTML-Seite sind erstellt. Packt jeglichen code darein.*/
+/* WICHTIG: Arbeitet mit Klassen. Alles, was css extra benötigt, kriegt eine Klasse.*/
+/* Sonst beeinflusst und nervt sich alles gegenseitig*/
+
 /*Start Grundgerüst aller HTML-Seiten*/
 
 body {
@@ -18,7 +22,6 @@ body {
     line-height: 1.6;
     overflow-y: auto;
 }
-
 header {
     grid-area: header;
     background-color: #007bff;
@@ -26,7 +29,6 @@ header {
     padding: 15px 0;
     text-align: center;
 }
-
 nav {
     grid-area: nav;
     background-color: #007bff;
@@ -35,7 +37,6 @@ nav {
     justify-content: center; 
     align-items: center;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -44,7 +45,6 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-
 nav a {
     text-decoration: none;
     color: #fff;
@@ -54,12 +54,9 @@ nav a {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-
 nav a:hover {
     background-color: #003f8a;
 }
-
-
 main {
     grid-area: main;
     background-color: #fff;
@@ -71,42 +68,35 @@ main {
     justify-content: center;
     align-items: center;
 }
-
 footer {
     background-color: #0056b3;
     color: white;
     font-family: Arial, sans-serif;
     padding: 20px 10%;
 }
-
 .footer-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
 }
-
 .footer-section {
     flex: 1;
     min-width: 200px;
     margin-bottom: 20px;
     text-align: center;
 }
-
 .footer-section h3 {
     margin-top: 0;
 }
-
 .footer-section p, .footer-section a {
     margin: 5px 0;
     color: #ccc;
     text-decoration: none;
 }
-
 .footer-section a:hover {
     text-decoration: underline;
 }
-
 .footer-bottom {
     text-align: center;
     border-top: 1px solid #444;
@@ -116,6 +106,44 @@ footer {
 /*Ende Grundgerüst aller HTML-Seiten*/
 
 
+
+
+
+/*Start datenschutz.html*/
+
+/*Ende datenschutz.html*/
+
+
+
+
+
+/*Start impressum.html*/
+
+/*Ende impressum.html*/
+
+
+
+
+
+/*Start index.html*/
+
+/*Ende index.html*/
+
+
+
+
+
+/*Start installation.html*/
+
+/*Ende installation.html*/
+
+
+
+
+
+/*Start konfiguration.html*/
+
+/*Ende konfiguration.html*/
 
 
 
@@ -203,7 +231,6 @@ main.kontakt {
 
 
 
-
 /*Start ueber-uns.html*/
 
 main.ueber-uns{
@@ -226,3 +253,19 @@ section.ueber-uns{
 }
 
 /*Ende ueber-uns.html*/
+
+
+
+
+
+/*Start uebersicht.html*/
+
+/*Ende uebersicht.html*/
+
+
+
+
+
+/*Start vorbereitung.html*/
+
+/*Ende vorbereitung.html*/
