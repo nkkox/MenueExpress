@@ -65,8 +65,7 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 100%;
     display: flex;
-    justify-content: row;
-    align-items: row;
+    flex-direction: column;
 }
 footer {
     background-color: #0056b3;
@@ -111,8 +110,11 @@ footer {
 
 /*Start datenschutz.html*/
 main.datenschutz{
+    display: flex;
     grid-area: main;
-    background-color: #fff;
+    background-color: #ff0000;
+    flex-direction: column;
+    
 }
 /*Ende datenschutz.html*/
 
