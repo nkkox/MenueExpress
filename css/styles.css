@@ -279,3 +279,24 @@ section.ueber-uns{
 /*Start vorbereitung.html*/
 
 /*Ende vorbereitung.html*/
+main.index-main {
+    grid-area: main;
+    background-color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.install-main {
+    grid-area: main;
+    background-color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
