@@ -24,48 +24,51 @@
         </ul>
     </nav>
 
-<main id="install-main">
+    <main id="install-main">
+
         <h2>Installationsvorgänge</h2>
 
-<h2>Ziel</h2>
-Zwei Computer werden mit Ubuntu 16.04.7 LTS installiert: Einer dient als Server, der andere als Client. Beide benötigen NFS (Dateiserver) und NIS (Anmeldeserver).<br>
-<br>
-<h4>1. Vorbereitung</h4>
-<li>USB-Stick: Installationsdatei von Ubuntu 16.04.7 LTS.</li>
-<li>Speicherplatz: Mindestens 5 GB frei.</li>
-<li>Backup: Sicherung wichtiger Dateien.</li>
-<br>
-<h4>2. Installation von Ubuntu<br></h4>
-<div>- USB-Stick einstecken und Computer einschalten</div>
-<div>- Boot-Menü aufrufen (z.B. F12, Esc, F9) und USB-Stick auswählen.</div>
-<div>- Sprache wählen und Installation starten.</div>
-<div>- Updates und optionale Software installieren.</div>
-<div>- Festplatte formatieren und Installation bestätigen.</div>
-<div>- Standort und Tastaturlayout wählen.</div>
-<div>- Benutzerdaten eingeben:</div>
-<li>Server: Name, "server", Benutzername, Passwort.</li>
-<li>Client: Name, "client", Benutzername, Passwort.</li>
-- Optionen:Passwort zur Anmeldung erforderlich.<br>
-- Installation abschließen und Computer neu starten.<br>
-<br>
-<h4>3. Installation von NFS</h4>
-NFS-Server:
-<li>Root-User: Passwort festlegen (sudo passwd root) und anmelden (su).</li>
-<li>Installation: apt-get -y install nfs-kernel-server.</li>
-<br>
-NFS-Client:
-<li>Root-User: Anmelden (su).</li>
-<li>Installation: apt-get -y install nfs-common.</li>
-<li>Automount: apt-get -y install autofs.</li>
-<br>
-<h4>4. Installation von NIS</h4>
-NIS-Server:
-<li>Anmelden (su).</li>
-<li>Installation: apt-get -y install nis.</li>
-<br>
-NIS-Client:
-<li>Root-User: Anmelden (su).</li>
-<li>Installation: apt-get -y install nis.</li>
+        <h2>Ziel</h2>
+        Zwei Computer werden mit Ubuntu 16.04.7 LTS installiert: Einer dient als Server, der andere als Client. Beide benötigen NFS (Dateiserver) und NIS (Anmeldeserver).<br>
+        <a href="Pflichtenheft.pdf" class="download-link" target="_blank">Das Pflichtenheft lesen</a>
+
+        <br>
+        <h4>1. Vorbereitung</h4>
+        <li>USB-Stick: Installationsdatei von Ubuntu 16.04.7 LTS.</li>
+        <li>Speicherplatz: Mindestens 5 GB frei.</li>
+        <li>Backup: Sicherung wichtiger Dateien.</li>
+        <br>
+        <h4>2. Installation von Ubuntu<br></h4>
+        <div>- USB-Stick einstecken und Computer einschalten</div>
+        <div>- Boot-Menü aufrufen (z.B. F12, Esc, F9) und USB-Stick auswählen.</div>
+        <div>- Sprache wählen und Installation starten.</div>
+        <div>- Updates und optionale Software installieren.</div>
+        <div>- Festplatte formatieren und Installation bestätigen.</div>
+        <div>- Standort und Tastaturlayout wählen.</div>
+        <div>- Benutzerdaten eingeben:</div>
+        <li>Server: Name, "server", Benutzername, Passwort.</li>
+        <li>Client: Name, "client", Benutzername, Passwort.</li>
+        - Optionen:Passwort zur Anmeldung erforderlich.<br>
+        - Installation abschließen und Computer neu starten.<br>
+        <br>
+        <h4>3. Installation von NFS</h4>
+        NFS-Server:
+        <li>Root-User: Passwort festlegen (sudo passwd root) und anmelden (su).</li>
+        <li>Installation: apt-get -y install nfs-kernel-server.</li>
+        <br>
+        NFS-Client:
+        <li>Root-User: Anmelden (su).</li>
+        <li>Installation: apt-get -y install nfs-common.</li>
+        <li>Automount: apt-get -y install autofs.</li>
+        <br>
+        <h4>4. Installation von NIS</h4>
+        NIS-Server:
+        <li>Anmelden (su).</li>
+        <li>Installation: apt-get -y install nis.</li>
+        <br>
+        NIS-Client:
+        <li>Root-User: Anmelden (su).</li>
+        <li>Installation: apt-get -y install nis.</li>
     </main>
 
 
