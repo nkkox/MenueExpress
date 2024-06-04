@@ -25,7 +25,83 @@
     </nav>
 
     <main>
-        <h2>Inhalt hier</h2>
+        <h1>Konfiguration</h1>
+
+        <p>Auf dieser Seite wird jegliche Konfiguration an unserem Client- und Server-PC beschrieben.</p>
+        <a href="Pflichtenheft.pdf" class="download-link" target="_blank">Das Pflichtenheft lesen</a>
+        
+        <h2>NFS-Konfiguration</h2>
+        
+        <h3>NFS-Server:</h3>
+        <ul>
+            <li><strong>Konfiguration des Domain-Namens in idmapd.conf:</strong> Wir haben die Datei idmapd.conf mit einem Texteditor geöffnet und den Domain-Namen auf "menue.express" gesetzt. Diese Einstellung ist notwendig, um die Benutzer- und Gruppeninformationen zwischen dem Server und dem Client korrekt abzugleichen.</li>
+            <li><strong>Konfiguration der NFS-Freigaben in exports:</strong> In der Datei exports haben wir festgelegt, welche Verzeichnisse im Netzwerk freigegeben werden und wie der Zugriff darauf kontrolliert wird. Wir haben das Verzeichnis /home für alle Geräte im Netzwerk freigegeben.</li>
+            <li><strong>Neustart des NFS-Servers:</strong> Nach den vorgenannten Änderungen haben wir den NFS-Server neu gestartet, um sicherzustellen, dass alle Konfigurationen übernommen wurden.</li>
+        </ul>
+        
+        <h3>NFS-Client:</h3>
+        <ul>
+            <li><strong>Konfiguration der idmapd.conf auf dem Client:</strong> Auf dem Client haben wir die Datei idmapd.conf geöffnet und ebenfalls den Domain-Namen auf "menue.express" gesetzt, um die Benutzer- und Gruppen-IDs korrekt zuzuordnen.</li>
+            <li><strong>Mounten der NFS-Freigabe:</strong> Wir haben das Verzeichnis /home vom NFS-Server auf das lokale Verzeichnis /home des Clients gemountet.</li>
+            <li><strong>Automatisches Mounten beim Systemstart:</strong> Um sicherzustellen, dass das Verzeichnis bei jedem Systemstart automatisch gemountet wird, haben wir einen Eintrag in die Datei fstab hinzugefügt.</li>
+        </ul>
+        
+        <h3>Automount:</h3>
+        <ul>
+            <li><strong>Konfiguration von Auto-Mounting:</strong> Wir haben die Konfigurationsdatei auto.master angepasst, um das automatische Mounten zu ermöglichen.</li>
+            <li><strong>Konfiguration des Mount-Punkts:</strong> In der Datei auto.mount haben wir festgelegt, wie und wo die NFS-Freigabe gemountet wird.</li>
+            <li><strong>Erstellen des lokalen Mount-Verzeichnisses:</strong> Wir haben das Verzeichnis erstellt, in das die NFS-Freigabe gemountet wird.</li>
+            <li><strong>Neustart von Autofs:</strong> Um die neuen Konfigurationen zu laden, haben wir den Autofs-Dienst neu gestartet.</li>
+        </ul>
+        
+        <h2>NIS-Konfiguration</h2>
+        
+        <h3>NIS-Server:</h3>
+        <ul>
+            <li><strong>Festlegung der NIS-Domain:</strong> Nach der Installation haben wir die NIS-Domain auf "menue.express" festgelegt.</li>
+            <li><strong>Konfiguration des NIS-Master-Servers:</strong> Wir haben die Datei /etc/default/nis bearbeitet, um den Server als NIS-Master zu definieren.</li>
+            <li><strong>Konfiguration der Sicherheitsnetze:</strong> In der Datei ypserv.securenets haben wir den Zugriff auf unser spezifisches Netzwerk beschränkt.</li>
+            <li><strong>Anpassen des Makefiles:</strong> Wir haben das Makefile bearbeitet, um Passwörter und Gruppen zu mergen.</li>
+            <li><strong>Konfiguration der Hosts-Datei:</strong> Wir haben die Datei hosts bearbeitet, um den Server zu definieren.</li>
+            <li><strong>Neustart des NIS-Dienstes:</strong> Nach diesen Änderungen haben wir den NIS-Dienst neu gestartet.</li>
+            <li><strong>Initialisierung der NIS-Datenbank:</strong> Wir haben die NIS-Datenbank als Master-Server initialisiert.</li>
+        </ul>
+        
+        <h3>NIS-Client:</h3>
+        <ul>
+            <li><strong>Spezifizierung des NIS-Servers:</strong> Auf dem Client haben wir die Datei yp.conf bearbeitet, um den NIS-Server festzulegen.</li>
+            <li><strong>Anpassen der Datei nsswitch.conf:</strong> Wir haben diese Datei bearbeitet, um NIS für Benutzer- und Gruppeninformationen zu nutzen.</li>
+            <li><strong>Automatische Erstellung des Home-Verzeichnisses:</strong> Wir haben die Datei common-session angepasst, um sicherzustellen, dass das Home-Verzeichnis automatisch für NIS-Benutzer erstellt wird.</li>
+            <li><strong>Neustart der benötigten Dienste:</strong> Schließlich haben wir die erforderlichen Dienste neu gestartet, um die Änderungen zu übernehmen.</li>
+        </ul>
+        
+        <p>Diese detaillierte Konfiguration stellt sicher, dass alle Dienste korrekt eingerichtet sind und optimal funktionieren, um die Anforderungen von MenüExpress zu erfüllen.</p>
+        
+        <h2>Benutzer und Gruppen</h2>
+        
+        <h3>Theorie:</h3>
+        <p>Wir haben drei Benutzergruppen für das Unternehmen MenüExpress erstellt: Köche, Fahrer und Verwaltung. Jede Gruppe hat mehrere Benutzer, die bestimmten Aufgaben zugewiesen sind. Diese Struktur sorgt für eine klare Trennung der Aufgaben und erleichtert die Verwaltung der Zugriffsrechte.</p>
+        
+        <h3>Umsetzung:</h3>
+        <ul>
+            <li><strong>Erstellen der Gruppen:</strong> Wir haben die Gruppen in Ubuntu mit dem Befehl groupadd erstellt.</li>
+            <li><strong>Erstellen der Benutzer:</strong> Wir haben die Benutzer für jede Gruppe mit dem Befehl useradd erstellt. Jeder Benutzername wurde individuell festgelegt.</li>
+            <li><strong>Zuweisen der Benutzer zu Gruppen:</strong> Wir haben die Benutzer den entsprechenden Gruppen zugewiesen, um die Zugriffsrechte zu verwalten.</li>
+        </ul>
+        
+        <h2>Verzeichnisstruktur</h2>
+        
+        <h3>Erklärung:</h3>
+        <p>Wir haben eine klare Verzeichnisstruktur erstellt, die die verschiedenen Arbeitsbereiche der Gruppen widerspiegelt. Diese Struktur hilft dabei, die Daten organisiert zu halten und den Zugriff für die jeweiligen Gruppen zu beschränken.</p>
+        
+        <h3>Erstellung:</h3>
+        <ul>
+            <li><strong>Erstellen der Verzeichnisse:</strong> Wir haben die Verzeichnisse für die Gruppen im Root-Verzeichnis erstellt und den Gruppen zugeordnet.</li>
+            <li><strong>Setzen der Rechtemasken:</strong> Wir haben Rechtemasken für die Verzeichnisse festgelegt, um zu bestimmen, wer welche Handlungen ausführen kann. Diese Rechtemasken sorgen dafür, dass nur Gruppenmitglieder Zugriff auf ihre jeweiligen Verzeichnisse haben und dort auch Lese-, Schreib- und Ausführrechte besitzen.</li>
+        </ul>
+        
+        <p>Mit diesen Schritten haben wir eine sichergestellt, dass unsere Dienste gut funktionieren, und die Mitarbeiter von MenüExpress störfrei arbeiten können.</p>
+        
     </main>
 
     <footer>
