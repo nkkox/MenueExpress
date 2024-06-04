@@ -172,6 +172,7 @@ main.install-main {
 
 
 
+
 /*Start kontakt.html*/
 
 main.kontakt {
@@ -185,7 +186,6 @@ main.kontakt {
     justify-content: center;
     align-items: center;
 }
-
 
 .contact-form-container {
     background-color: #fff;
@@ -204,7 +204,6 @@ main.kontakt {
 
 .form-group {
     margin-bottom: 15px;
-    padding: 20px;
 }
 
 .form-group label {
@@ -222,14 +221,7 @@ main.kontakt {
     font-size: 16px;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
 .submit-button {
-    display: inline-block;
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
@@ -249,6 +241,7 @@ main.kontakt {
 }
 
 /*Ende kontakt.html*/
+
 
 
 
