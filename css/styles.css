@@ -114,13 +114,7 @@ footer {
 
 
 /*Start datenschutz.html*/
-main.datenschutz{
-    display: flex;
-    grid-area: main;
-    background-color: #ff0000;
-    flex-direction: column;
-    
-}
+
 /*Ende datenschutz.html*/
 
 
